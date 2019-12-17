@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
-import { Auth } from './pages/pages'
 
 class App extends Component {
   render(){
     return (
       <div className='wrapper'>
-        <Auth />
+        hello world
       </div>
     )
   }
