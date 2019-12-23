@@ -1,10 +1,14 @@
 @import '~styles/variables';
 
 .message {
-    display: flex;
-    max-width: 440px;
-    margin-bottom: 15px;
-    
+    $self: &;
+
+    &__content {
+        display: flex;
+        max-width: 440px;
+        margin-bottom: 15px;
+    }
+
     &__avatar {
         display: flex;
         flex-direction: column-reverse ;
@@ -32,5 +36,52 @@
     &__date {
         font-size: 12px;
         opacity: 0.5;
+    }
+
+    &__checked {
+        display: none;
+        width: 20px;
+        height: 20px;
+        margin: auto 0;
+        margin-left: 10px;
+    }
+
+    &--isme {
+        display: flex;
+        flex-direction: row-reverse;
+
+        #{$self}__content {
+            margin-bottom: 15px;
+            flex-direction: row-reverse;
+        }
+
+        #{$self}__avatar { 
+            img {
+                margin-right: 0;
+                margin-left: 13px;
+            }
+        }
+
+        #{$self}__info {
+            text-align: right;
+        }
+
+        #{$self}__bubble {
+            background: #fff;
+            border: 1px solid #ececec;
+            box-shadow: 0px 4px 4px rgba(0,0,0,0.02);
+            border-radius: 12px 12px 0px 12px;
+
+            #{$self}__text {
+                color: $black;
+                text-align: left;
+            }
+        }
+
+        #{$self}__checked {
+            margin-left: 0px;
+            margin-right: 10px;
+            display: inline;
+        }
     }
 }
