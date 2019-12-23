@@ -2,12 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import formatDistanceToNow from 'date-fns/formatDistanceToNow'
 import eoLocale from 'date-fns/locale/en-US'
+import classnames from 'classnames'
 
 import './Message.scss'
 
-const Message = ({avatar, user, text, date}) => {
+const Message = ({avatar, user, text, date, isMe}) => {
     return (
-        <div className='message'>
+        <div className={classnames('message', { 'message--isme': isMe }) }>
             <div className='message__avatar'>
                 <img src={avatar} alt={`Avatar ${user.fullname}`} />
             </div>
