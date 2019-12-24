@@ -28,9 +28,22 @@
         padding: 15px;
         margin-bottom: 8px;
     }
+
     &__text {
         color: #fff;
         line-height: 20px;
+    }
+
+    &__attachments {
+        display: flex;
+        margin-bottom: 7px;
+        img {
+            width: 45px;
+            height: 45px;
+            border-radius: 8px;
+            margin-right: 6px;
+            cursor: pointer;
+        }
     }
 
     &__date {
@@ -40,8 +53,8 @@
 
     &__checked {
         display: none;
-        width: 20px;
-        height: 20px;
+        width: 15px;
+        height: 15px;
         margin: auto 0;
         margin-left: 10px;
     }
@@ -66,6 +79,10 @@
             text-align: right;
         }
 
+        #{$self}__attachments {
+            justify-content: flex-end;
+        }
+
         #{$self}__bubble {
             background: #fff;
             border: 1px solid #ececec;
@@ -84,4 +101,49 @@
             display: inline;
         }
     }
+
+    &--is-typing {
+        #{$self}__bubble {
+            background: #9ABAFF;
+            box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.19);
+        }
+    }
+
+    &__typing {
+        span {
+            height: 8px;
+            width: 8px;
+            border-radius: 50%;
+            background: #ffffff;
+            display: inline-block;
+            margin-right: 8px;
+
+            &:nth-of-type(1){
+                animation: typingAnimation 1s ease-in-out infinite;
+                animation-delay: .1s;
+                animation-direction: normal;
+            }
+            &:nth-of-type(2){
+                animation: typingAnimation 1s ease-in-out infinite;
+                animation-delay: .2s;
+                animation-direction: normal;
+            }
+            &:nth-of-type(3){
+                animation: typingAnimation 1s ease-in-out infinite;
+                animation-delay: .3s;
+                animation-direction: normal;
+            }
+        }
+    }
+}
+
+@keyframes typingAnimation {
+    from {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+      }
+    
+      50% {
+        opacity: 1;
+      }
 }

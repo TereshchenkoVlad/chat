@@ -8,21 +8,47 @@ import unCheckedSvg from 'assets/img/unchecked.svg'
 
 import './Message.scss'
 
-const Message = ({avatar, user, text, date, isMe, isReaded}) => {
+const Message = ({avatar, user, text, date, isMe, isReaded, attachments, isTyping}) => {
     return (
-        <div className={classnames('message', {'message--isme': isMe})}>
+        <div className={classnames('message', {
+            'message--isme': isMe, 
+            'message--is-typing': isTyping
+            })}>
             <div className='message__content'>
                 <div className='message__avatar'>
                     <img src={avatar} alt={`Avatar ${user.fullname}`} />
                 </div>
                 <div className='message__info'>
                     <div className='message__bubble'>
-                        <p className='message__text'>{text}</p>
+                        { text && <p className='message__text'>{text}</p>}
+                        { isTyping && 
+                        <div className='message__typing'>
+                            <span />
+                            <span />
+                            <span />
+                        </div>      
+                        }
                     </div>
-                    <span className='message__date'>
-                        {formatDistanceToNow(date, { addSuffix: true, locale: eoLocale })}
-                    </span>
+                    <div className='message__attachments'>
+                        {
+                            attachments 
+                            ?
+                            attachments.map((item, index) => (
+                                <div key={item.filename + index}>
+                                    <img src={item.url} alt={item.filename}/>
+                                </div>
+                            ))
+                            :
+                            null
+                        }
+                    </div>
+                    {date && 
+                        <span className='message__date'>
+                            {formatDistanceToNow(date, { addSuffix: true, locale: eoLocale })}
+                        </span>
+                    }
                 </div>
+                
                 
                 {   isMe && isReaded 
                     ?
@@ -36,6 +62,7 @@ const Message = ({avatar, user, text, date, isMe, isReaded}) => {
                 }
                 
             </div>
+            
         </div>
     )
 }
@@ -47,8 +74,10 @@ Message.defaultProps = {
 Message.propTypes = {
     avatar: PropTypes.string,
     text: PropTypes.string,
-    // date: PropTypes. ,
+    date: PropTypes.string ,
     user: PropTypes.object,
+    attachments: PropTypes.array,
+    isTyping: PropTypes.bool
 }
 
 export default Message
