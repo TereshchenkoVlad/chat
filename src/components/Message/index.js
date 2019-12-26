@@ -1,25 +1,23 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import formatDistanceToNow from 'date-fns/formatDistanceToNow'
-import eoLocale from 'date-fns/locale/en-US'
 import classnames from 'classnames'
-import checkedSvg from 'assets/img/checked.svg'
-import unCheckedSvg from 'assets/img/unchecked.svg'
 
+import { Time, MessageStatus } from 'components'
 import './Message.scss'
 
 const Message = ({avatar, user, text, date, isMe, isReaded, attachments, isTyping}) => {
     return (
         <div className={classnames('message', {
             'message--isme': isMe, 
-            'message--is-typing': isTyping
+            'message--is-typing': isTyping,
+            'message--image': attachments && attachments.length === 1
             })}>
             <div className='message__content'>
                 <div className='message__avatar'>
                     <img src={avatar} alt={`Avatar ${user.fullname}`} />
                 </div>
                 <div className='message__info'>
-                    <div className='message__bubble'>
+                    { (text || isTyping) && <div className='message__bubble'>
                         { text && <p className='message__text'>{text}</p>}
                         { isTyping && 
                         <div className='message__typing'>
@@ -28,7 +26,7 @@ const Message = ({avatar, user, text, date, isMe, isReaded, attachments, isTypin
                             <span />
                         </div>      
                         }
-                    </div>
+                    </div>}
                     <div className='message__attachments'>
                         {
                             attachments 
@@ -44,22 +42,12 @@ const Message = ({avatar, user, text, date, isMe, isReaded, attachments, isTypin
                     </div>
                     {date && 
                         <span className='message__date'>
-                            {formatDistanceToNow(date, { addSuffix: true, locale: eoLocale })}
+                            <Time date={date} />
                         </span>
                     }
                 </div>
                 
-                
-                {   isMe && isReaded 
-                    ?
-                    (
-                        <img className='message__checked' src={checkedSvg} alt='checked' />
-                    ) 
-                    :
-                    (
-                        <img className='message__checked' src={unCheckedSvg} alt='unchecked' />
-                    ) 
-                }
+                <MessageStatus isMe={isMe} isReaded={isReaded}/>
                 
             </div>
             
@@ -72,6 +60,8 @@ Message.defaultProps = {
 }
 
 Message.propTypes = {
+    sMe: PropTypes.bool,
+    isReaded: PropTypes.bool,
     avatar: PropTypes.string,
     text: PropTypes.string,
     date: PropTypes.string ,
