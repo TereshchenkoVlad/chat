@@ -1,64 +1,58 @@
 import React from 'react'
 
-import { Message, DialogItem } from 'components'
+import { Dialogs, Message } from 'components'
  
 const Home = () => {
     return (
         <section>
-            <DialogItem user = {{
-                fullname: 'Cristiano Ronaldo',
-                isOnline: true, 
-
-            }} 
-            unreaded = {0}
-            />
-            <DialogItem user = {{
-                fullname: 'Cristiano Ronaldo',
-                isOnline: true, 
-
-            }} 
-            unreaded = {0}
-            />
-            <DialogItem user = {{
-                fullname: 'Cristiano Ronaldo',
-                isOnline: true, 
-
-            }} 
-            unreaded = {0}
-            />
-            {/* <Dialogs items= {[
+            
+            <Dialogs 
+            userId = {1}
+            items= {[
                 {
+                    _id: 1,
+                     text: `Підтримує плагіни, розроблені за допомогою мови програмування Python`,
+                    created_at: new Date('2019-12-12'),
                     user: {
+                        _id: 1,
                         fullname: 'Maximilian Ostapovich',
-                        avatar: null  
-                    },
-                    message: {
-                        text: `Hi bitch, sho ti blya? Здравствуй, Ангел мой, Аня… А тут игра, 
-                        от которой оторваться не мог. Можешь представить, в каком я был возбуждении.`,
-                        isReaded: false,
-                        updated_at: new Date()
+                        avatar: null,
+                        isOnline: false
+                    }
+                },
+                {
+                    _id: 1,
+                     text: `Підтримує плагіни, розроблені за допомогою мови програмування Python`,
+                    created_at: new Date('2019-12-14'),
+                    user: {
+                        _id: 1,
+                        fullname: 'Yirio Familiano',
+                        avatar: 'http://pngimg.com/uploads/avatar/avatar_PNG47.png',
+                        isOnline: true
+                    }
+                },
+                {
+                    _id: 1,
+                     text: `Підтримує плагіни, розроблені за допомогою мови програмування Python`,
+                    created_at: new Date('2019-12-24'),
+                    user: {
+                        _id: 1,
+                        fullname: 'Riolo Giornio',
+                        avatar: 'http://carismartes.com.br/assets/global/images/avatars/avatar4_big@2x.png',
+                        isOnline: true
                     }
                 }
-            ]} /> */}
+            ]} />
 
-            {/* <Message 
+            <Message 
                 avatar='https://image.flaticon.com/icons/png/512/186/premium/186313.png' 
-                text='Привіт друже як ти? Вже став міддл розробником?😂' date={new Date('2019-12-19')} 
-                isMe = {true} 
+                date={new Date('2019-12-19')} 
+                isMe = {false} 
                 isReaded = {true}
-                attachments = {[
-                    {
-                        filename: 'image.jpg',
-                        url: 'https://source.unsplash.com/user/erondu/100x100',
-                    },
-                    {
-                        filename: 'image.jpg',
-                        url: 'https://source.unsplash.com/user/erondu/100x100',
-                    }
-                ]}
+                audio='https://www.soundeffectsplus.com/uploads/prod_audio/39472249_footsteps-running-on-road-03.mp3'
             />
             
-            <Message 
+            {/*  <Message 
                 avatar = 'https://cdn.icon-icons.com/icons2/1879/PNG/512/iconfinder-7-avatar-2754582_120519.png'
                 attachments = {[
                     {

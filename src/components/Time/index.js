@@ -5,7 +5,7 @@ import eoLocale from 'date-fns/locale/en-US'
 
 const Time = ({ date }) => (
     <>
-        {formatDistanceToNow(date, { addSuffix: true, locale: eoLocale })}
+        {formatDistanceToNow(date, { addSuffix: false, locale: eoLocale })}
     </>
 )
     
