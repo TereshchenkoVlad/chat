@@ -6,7 +6,7 @@
     &__content {
         display: flex;
         max-width: 440px;
-        margin-bottom: 15px;
+        margin-bottom: 27px;
     }
 
     &__avatar {
@@ -68,6 +68,7 @@
         #{$self}__content {
             margin-bottom: 15px;
             flex-direction: row-reverse;
+            margin-bottom: 27px;
         }
 
         #{$self}__avatar { 

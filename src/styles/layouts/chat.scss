@@ -1,0 +1,107 @@
+.chat {
+    display: flex;
+    background-color: #fff;
+    width: 1140px;
+    height: 100%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 25px rgba(0,0,0, 0.09);
+
+    &__sidebar {
+        width: 320px;
+        border-right: 1px solid #f7f7f7;
+        &-header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            border-bottom: 1px solid #f7f7f7;
+            height: 62px;
+            margin-bottom: 20px;
+            & > div {
+                i {
+                    display: inline-block;
+                    margin-right: 7px;
+                }
+            }
+        }
+
+        &-search {
+            padding: 0 20px 20px; 
+            input {
+                height: 38px;
+                background-color:#f3f7ff; 
+                border: none;
+                border-radius: 0;
+                outline: none;
+            }
+        }
+
+        &-dialogs {
+            .dialogs {
+                &__item {
+                    padding: 10px 20px;
+                    margin-bottom: 0;
+                    cursor: pointer;
+
+                    &.active,
+                    &:hover {
+                        background-color: #f3f7ff; 
+                    }
+                }
+            }
+        }
+    }
+
+    &__dialog {
+        flex: 1;
+
+        &-header {
+            position: relative;
+            display: flex; 
+            padding: 12px;
+            border-bottom: 1px solid #f7f7f7;
+            justify-content: center;
+
+            &-username {
+                font-weight: 500;
+                display: block;
+                margin-bottom: 7px;
+                font-size: 16px;
+            }
+
+            &-center {
+                text-align: center;
+                .status {
+                    position: relative;
+                    color: #adadad;
+                    &--online {
+                        &::before {
+                            background-color: #00c980;
+                        }
+                    }
+                    &::before {
+                        position: absolute;
+                        top: 4px;
+                        left: 32px;
+                        display: block;
+                        content: '';
+                        width: 7px;
+                        height: 7px;
+                        border-radius: 50%;
+                        background-color: #d3d3d3;
+                    }
+                }
+            }
+        }
+
+        &-messages {
+            padding: 20px;
+        }
+
+        &-burger-menu {
+            position: absolute;
+            top: 22px;
+            right: 20px;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,187 @@
+    {
+        _id: '50b1bb8d98b9f0f1e0744d1bf91d9f52',
+        text: `Підтримує плагіни, розроблені за допомогою мови програмування Python`,
+        created_at: new Date('2019-12-12'),
+        user: {
+            _id: '50b1bb8d98b9f0f1e0744d1bf91d9f52',
+            fullname: 'Maximilian Ostapovich',
+            avatar: null,
+            isOnline: false
+        }
+    },
+    {
+        _id: 1,
+        text: `Підтримує плагіни, розроблені за допомогою мови програмування Python`,
+        created_at: new Date('2019-12-14'),
+        user: {
+            _id: '50b1bb8d98b9f0f1e0744d1bf91d9f52',
+            fullname: 'Yirio Familiano',
+            avatar: 'http://pngimg.com/uploads/avatar/avatar_PNG47.png',
+            isOnline: true
+        }
+    },
+    {
+        _id: 1,
+        text: `Підтримує плагіни, розроблені за допомогою мови програмування Python`,
+        created_at: new Date('2019-12-24'),
+        user: {
+            _id: '50b1bb8d98b9f0f1e0744d1bf91d9f52',
+            fullname: 'Riolo Giornio',
+            avatar: 'http://carismartes.com.br/assets/global/images/avatars/avatar4_big@2x.png',
+            isOnline: true
+        }
+    },
+    {
+        _id: 1,
+        text: `Підтримує плагіни, розроблені за допомогою мови програмування Python`,
+        created_at: new Date('2019-12-14'),
+        user: {
+            _id: '50b1bb8d98b9f0f1e0744d1bf91d9f52',
+            fullname: 'Yirio Familiano',
+            avatar: 'http://pngimg.com/uploads/avatar/avatar_PNG47.png',
+            isOnline: true
+        }
+    },
+    {
+        _id: 1,
+        text: `Підтримує плагіни, розроблені за допомогою мови програмування Python`,
+        created_at: new Date('2019-12-24'),
+        user: {
+            _id: '50b1bb8d98b9f0f1e0744d1bf91d9f52',
+            fullname: 'Riolo Giornio',
+            avatar: 'http://carismartes.com.br/assets/global/images/avatars/avatar4_big@2x.png',
+            isOnline: true
+        }
+    },
+    {
+        _id: '50b1bb8d98b9f0f1e0744d1bf91d9f52',
+        text: `Підтримує плагіни, розроблені за допомогою мови програмування Python`,
+        created_at: new Date('2019-12-12'),
+        user: {
+            _id: '50b1bb8d98b9f0f1e0744d1bf91d9f52',
+            fullname: 'Maximilian Ostapovich',
+            avatar: null,
+            isOnline: false
+        }
+    },
+    {
+        _id: 1,
+        text: `Підтримує плагіни, розроблені за допомогою мови програмування Python`,
+        created_at: new Date('2019-12-14'),
+        user: {
+            _id: '50b1bb8d98b9f0f1e0744d1bf91d9f52',
+            fullname: 'Yirio Familiano',
+            avatar: 'http://pngimg.com/uploads/avatar/avatar_PNG47.png',
+            isOnline: true
+        }
+    },
+    {
+        _id: 1,
+        text: `Підтримує плагіни, розроблені за допомогою мови програмування Python`,
+        created_at: new Date('2019-12-24'),
+        user: {
+            _id: '50b1bb8d98b9f0f1e0744d1bf91d9f52',
+            fullname: 'Riolo Giornio',
+            avatar: 'http://carismartes.com.br/assets/global/images/avatars/avatar4_big@2x.png',
+            isOnline: true
+        }
+    },
+    {
+        _id: 1,
+        text: `Підтримує плагіни, розроблені за допомогою мови програмування Python`,
+        created_at: new Date('2019-12-14'),
+        user: {
+            _id: '50b1bb8d98b9f0f1e0744d1bf91d9f52',
+            fullname: 'Yirio Familiano',
+            avatar: 'http://pngimg.com/uploads/avatar/avatar_PNG47.png',
+            isOnline: true
+        }
+    },
+    {
+        _id: 1,
+        text: `Підтримує плагіни, розроблені за допомогою мови програмування Python`,
+        created_at: new Date('2019-12-24'),
+        user: {
+            _id: '50b1bb8d98b9f0f1e0744d1bf91d9f52',
+            fullname: 'Riolo Giornio',
+            avatar: 'http://carismartes.com.br/assets/global/images/avatars/avatar4_big@2x.png',
+            isOnline: true
+        }
+    },
+    {
+        _id: 1,
+        text: `Підтримує плагіни, розроблені за допомогою мови програмування Python`,
+        created_at: new Date('2019-12-14'),
+        user: {
+            _id: '50b1bb8d98b9f0f1e0744d1bf91d9f52',
+            fullname: 'Yirio Familiano',
+            avatar: 'http://pngimg.com/uploads/avatar/avatar_PNG47.png',
+            isOnline: true
+        }
+    },
+    {
+        _id: 1,
+        text: `Підтримує плагіни, розроблені за допомогою мови програмування Python`,
+        created_at: new Date('2019-12-24'),
+        user: {
+            _id: '50b1bb8d98b9f0f1e0744d1bf91d9f52',
+            fullname: 'Riolo Giornio',
+            avatar: 'http://carismartes.com.br/assets/global/images/avatars/avatar4_big@2x.png',
+            isOnline: true
+        }
+    },
+    {
+        _id: '50b1bb8d98b9f0f1e0744d1bf91d9f52',
+        text: `Підтримує плагіни, розроблені за допомогою мови програмування Python`,
+        created_at: new Date('2019-12-12'),
+        user: {
+            _id: '50b1bb8d98b9f0f1e0744d1bf91d9f52',
+            fullname: 'Maximilian Ostapovich',
+            avatar: null,
+            isOnline: false
+        }
+    },
+    {
+        _id: 1,
+        text: `Підтримує плагіни, розроблені за допомогою мови програмування Python`,
+        created_at: new Date('2019-12-14'),
+        user: {
+            _id: '50b1bb8d98b9f0f1e0744d1bf91d9f52',
+            fullname: 'Yirio Familiano',
+            avatar: 'http://pngimg.com/uploads/avatar/avatar_PNG47.png',
+            isOnline: true
+        }
+    },
+    {
+        _id: 1,
+        text: `Підтримує плагіни, розроблені за допомогою мови програмування Python`,
+        created_at: new Date('2019-12-24'),
+        user: {
+            _id: '50b1bb8d98b9f0f1e0744d1bf91d9f52',
+            fullname: 'Riolo Giornio',
+            avatar: 'http://carismartes.com.br/assets/global/images/avatars/avatar4_big@2x.png',
+            isOnline: true
+        }
+    },
+    {
+        _id: 1,
+        text: `Підтримує плагіни, розроблені за допомогою мови програмування Python`,
+        created_at: new Date('2019-12-14'),
+        user: {
+            _id: '50b1bb8d98b9f0f1e0744d1bf91d9f52',
+            fullname: 'Yirio Familiano',
+            avatar: 'http://pngimg.com/uploads/avatar/avatar_PNG47.png',
+            isOnline: true
+        }
+    },
+    {
+        _id: 1,
+        text: `Підтримує плагіни, розроблені за допомогою мови програмування Python`,
+        created_at: new Date('2019-12-24'),
+        user: {
+            _id: '50b1bb8d98b9f0f1e0744d1bf91d9f52',
+            fullname: 'Riolo Giornio',
+            avatar: 'http://carismartes.com.br/assets/global/images/avatars/avatar4_big@2x.png',
+            isOnline: true
+        }
+    }
