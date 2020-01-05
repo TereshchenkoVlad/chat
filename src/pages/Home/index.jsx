@@ -1,7 +1,7 @@
 import React from 'react'
 import { Icon, Input  } from 'antd'
 
-import { Dialogs, Message } from 'components'
+import { Dialogs, Message, Status } from 'components'
 
 const { Search } = Input
  
@@ -227,7 +227,7 @@ const Home = () => {
                         <div className="chat__dialog-header-center">
                             <b className="chat__dialog-header-username">Владислав Терещенко</b>
                             <div className="chat__dialog-status">
-                                <div className='status status--online'>В мережі</div>
+                                <Status online={true} />
                             </div>
                         </div>
                         <div className='chat__dialog-burger-menu'>
@@ -259,12 +259,39 @@ const Home = () => {
                             isMe = {true} 
                             text='на сервисе у вас будут расширены ограничения проверки, предназначенные для гостей на сервисе у вас будут расширены ограничения проверки, предназначенные для гостей'
                         />
+                         <Message 
+                            avatar = 'https://image.flaticon.com/icons/png/512/186/premium/186313.png'
+                            date={new Date('2019-12-25')} 
+                            isMe = {true} 
+                            text='на сервисе у вас будут расширены ограничения проверки, предназначенные для гостей на сервисе у вас будут расширены ограничения проверки, предназначенные для гостей'
+                        />
+                         <Message 
+                            avatar = 'https://image.flaticon.com/icons/png/512/186/premium/186313.png'
+                            date={new Date('2019-12-25')} 
+                            isMe = {false} 
+                            text='на сервисе у вас будут расширены ограничения проверки, предназначенные для гостей на сервисе у вас будут расширены ограничения проверки, предназначенные для гостей'
+                        />
+                         <Message 
+                            avatar = 'https://image.flaticon.com/icons/png/512/186/premium/186313.png'
+                            date={new Date('2019-12-25')} 
+                            isMe = {true} 
+                            text='на сервисе у вас будут расширены ограничения проверки, предназначенные для гостей на сервисе у вас будут расширены ограничения проверки, предназначенные для гостей'
+                        />
+                         <Message 
+                            avatar = 'https://image.flaticon.com/icons/png/512/186/premium/186313.png'
+                            date={new Date('2019-12-25')} 
+                            isMe = {false} 
+                            text='на сервисе у вас будут расширены ограничения проверки, предназначенные для гостей на сервисе у вас будут расширены ограничения проверки, предназначенные для гостей'
+                        />
                         
                         <Message 
                             avatar = 'https://image.flaticon.com/icons/png/512/186/premium/186313.png'
                             isTyping = {true} 
                             isMe = {true} 
                         />
+                    </div>
+                    <div className="chat__dialog-type-area">
+                        <Input placeholder='Повідомлення...' />
                     </div>
                 </div>
             </div>

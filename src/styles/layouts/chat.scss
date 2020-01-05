@@ -2,7 +2,7 @@
     display: flex;
     background-color: #fff;
     width: 1140px;
-    height: 100%;
+    height: 95vh;
     margin: 0 auto;
     box-shadow: 0px 0px 25px rgba(0,0,0, 0.09);
 
@@ -70,31 +70,15 @@
 
             &-center {
                 text-align: center;
-                .status {
-                    position: relative;
-                    color: #adadad;
-                    &--online {
-                        &::before {
-                            background-color: #00c980;
-                        }
-                    }
-                    &::before {
-                        position: absolute;
-                        top: 4px;
-                        left: 32px;
-                        display: block;
-                        content: '';
-                        width: 7px;
-                        height: 7px;
-                        border-radius: 50%;
-                        background-color: #d3d3d3;
-                    }
-                }
+                
             }
         }
 
         &-messages {
             padding: 20px;
+            height: calc(95vh - 125px );
+            overflow: auto;
+            overflow-x: hidden;
         }
 
         &-burger-menu {
@@ -103,5 +87,15 @@
             right: 20px;
             cursor: pointer;
         }
+
+        &-type-area {
+            padding: 15px;
+        }
     }
+}
+
+.dialogs {
+    height: calc(95vh - 140px);
+    overflow: auto;
+    overflow-x: hidden;
 }

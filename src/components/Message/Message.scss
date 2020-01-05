@@ -110,6 +110,10 @@
             background: $message-typing-blue;
             box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.19);
         }
+
+        #{$self}__checked {
+            display: none;
+        }
     }
 
     &__typing {
