@@ -1,0 +1,40 @@
+.chat-input {
+    input[type="text"]{
+        padding-left: 32px;
+        padding-right: 84px;
+    }
+    position: relative;
+    &__smile-btn, &__actions {
+        position: absolute;
+        z-index: 5;
+        color: rgb(111, 111, 111);
+    }
+
+    &__smile-btn {
+        top: 12px;
+        left: 10px;
+    }
+
+    &__actions {
+        right: 10px;
+        top: 12px;
+        i {
+            margin-left: 10px;
+        }
+    }
+
+    i.anticon {
+        font-size: 17px;
+        cursor: pointer;
+        opacity: .5;
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    input {
+        &:focus {
+            box-shadow: none;
+         }
+    }
+}

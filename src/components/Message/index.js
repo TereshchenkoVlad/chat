@@ -5,7 +5,7 @@ import classnames from 'classnames'
 import convertTime from 'utils/convertTime'
 
 import { Time, MessageStatus } from 'components'
-import wavesPng from 'assets/img/Waves.png' 
+import wavesPng from 'assets/img/waves.png' 
 import playPng from 'assets/img/play.png' 
 import pausePng from 'assets/img/pause.png' 
 import './Message.scss'

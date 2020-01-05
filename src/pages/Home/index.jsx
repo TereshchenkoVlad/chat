@@ -1,7 +1,7 @@
 import React from 'react'
 import { Icon, Input  } from 'antd'
 
-import { Dialogs, Message, Status } from 'components'
+import { Dialogs, Message, Status, ChatInput } from 'components'
 
 const { Search } = Input
  
@@ -291,7 +291,7 @@ const Home = () => {
                         />
                     </div>
                     <div className="chat__dialog-type-area">
-                        <Input placeholder='Повідомлення...' />
+                        <ChatInput />
                     </div>
                 </div>
             </div>
