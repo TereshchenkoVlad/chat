@@ -24,17 +24,6 @@
             }
         }
 
-        &-search {
-            padding: 0 20px 20px; 
-            input {
-                height: 38px;
-                background-color:#f3f7ff; 
-                border: none;
-                border-radius: 0;
-                outline: none;
-            }
-        }
-
         &-dialogs {
             .dialogs {
                 &__item {
@@ -53,6 +42,14 @@
 
     &__dialog {
         flex: 1;
+        position: relative;
+
+        .ant-empty {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
 
         &-header {
             position: relative;

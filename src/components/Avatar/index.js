@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import generateAvatar from 'utils/generateAvatar'
 
 import './Avatar.scss'
@@ -26,10 +25,6 @@ const Avatar = ({ user }) => {
                 </div>
             )
     }
-}
-
-Avatar.PropTypes = {
-    className: PropTypes.string
 }
 
 export default Avatar

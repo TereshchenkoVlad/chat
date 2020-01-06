@@ -1,11 +1,25 @@
 import React from 'react'
 import orderBy from 'lodash/orderBy'
+import { Input, Empty  } from 'antd'
 
 import { DialogItem } from 'components'
 
-const Dialogs = ({ items, userId }) =>  (
+import './Dialogs.scss'
+
+const { Search } = Input
+
+const Dialogs = ({ items, userId, onSearch, inputValue }) =>  (
+    
     <div className='dialogs'>
-        { orderBy(items, ['created_at'], ['desc']).map((item, index) => (
+        <div className='dialogs__search'>
+            <Search
+                placeholder='Пошук користувачів'
+                onChange={e => onSearch(e.target.value)}
+                value={inputValue}
+            />
+        </div>
+
+        { items.length ? orderBy(items, ['created_at'], ['desc']).map((item, index) => (
             <DialogItem 
                 key={item._id+index}
                 user={item.user}
@@ -13,7 +27,7 @@ const Dialogs = ({ items, userId }) =>  (
                 text={item.text}
                 isMe={item.user._id === userId } 
             />
-        )) }
+        )) : <Empty description='Пусто' />}
     </div>
 );
 

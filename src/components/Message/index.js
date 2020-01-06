@@ -108,9 +108,7 @@ const Message = ({avatar, user, text, date, isMe, isReaded, attachments, isTypin
                         </span>
                     }
                 </div>
-                
                 <MessageStatus isMe={isMe} isReaded={isReaded}/>
-                
             </div>
             
         </div>
